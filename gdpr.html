@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ochrana osobných údajov — Pri Ruke</title>
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{--paper:#F5F3ED;--ink:#1B2430;--ink-soft:#4A5163;--muted:#8B8B7F;--border:#E4E0D3;--blue:#2C5AA0;}
+  *{box-sizing:border-box;}
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;margin:0;line-height:1.6;}
+  .wrap{max-width:720px;margin:0 auto;padding:28px 20px 60px;}
+  a{color:var(--blue);}
+  .back{display:inline-block;margin-bottom:20px;color:var(--ink-soft);text-decoration:none;font-weight:600;font-size:14.5px;}
+  h1{font-family:'Unbounded',sans-serif;font-weight:800;font-size:24px;margin:0 0 6px;}
+  h2{font-family:'Unbounded',sans-serif;font-weight:700;font-size:17px;margin:30px 0 10px;}
+  p,li{font-size:15px;color:var(--ink-soft);}
+  ul{padding-left:20px;}
+  li{margin-bottom:6px;}
+  .updated{font-size:13px;color:var(--muted);margin-bottom:24px;}
+  table{width:100%;border-collapse:collapse;margin:14px 0;font-size:14px;}
+  th,td{text-align:left;padding:9px 10px;border:1px solid var(--border);vertical-align:top;}
+  th{background:#EFEDE4;font-weight:700;}
+  .contact-box{margin-top:34px;padding:18px;background:#fff;border:1px solid var(--border);border-radius:14px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <a class="back" href="/">← Назад до При руке</a>
+  <h1>Ochrana osobných údajov</h1>
+  <p class="updated">Posledná aktualizácia: 30. júla 2026</p>
+
+  <p>Prevádzkovateľom webovej stránky priruke.sk a spracúvateľom osobných údajov je spoločnosť <strong>DAGNY s. r. o.</strong>, so sídlom Račianska 88 B, 831 02 Bratislava, IČO: 46 157 107, DIČ: 2023259282 (ďalej len "Prevádzkovateľ", "my"). Tieto zásady vysvetľujú, aké osobné údaje spracúvame, na aký účel, na akom právnom základe a aké práva máte.</p>
+
+  <h2>1. Aké údaje spracúvame</h2>
+  <table>
+    <tr><th>Údaj</th><th>Účel</th></tr>
+    <tr><td>E-mailová adresa</td><td>Identifikácia platby, zasielanie prístupového kódu (PIN), komunikácia so zákazníckou podporou</td></tr>
+    <tr><td>Prístupový kód (PIN)</td><td>Overenie prístupu k plateným témam z akéhokoľvek zariadenia</td></tr>
+    <tr><td>Platobné údaje</td><td>Spracúva výlučne platobná brána Stripe — my nemáme prístup k číslu karty</td></tr>
+    <tr><td>Zvuková nahrávka hlasu (iba v režime "Практика")</td><td>Dočasne prenesená do služby Microsoft Azure Speech na vyhodnotenie výslovnosti; na našich serveroch sa neukladá</td></tr>
+    <tr><td>IP adresa (technicky, krátkodobo)</td><td>Ochrana proti zneužitiu (napr. automatizované pokusy o uhádnutie PIN kódu, spam v kontaktnom formulári)</td></tr>
+  </table>
+  <p>Neregistrujeme meno, adresu ani iné identifikačné údaje, pokiaľ ich sami dobrovoľne neuvediete v kontaktnom formulári.</p>
+
+  <h2>2. Právny základ spracúvania</h2>
+  <ul>
+    <li><strong>Plnenie zmluvy</strong> (čl. 6 ods. 1 písm. b) GDPR) — e-mail, PIN a platobné údaje sú nevyhnutné na poskytnutie plateného prístupu.</li>
+    <li><strong>Súhlas</strong> (čl. 6 ods. 1 písm. a) GDPR) — použitie mikrofónu v režime Практика je dobrovoľné; bez súhlasu s prístupom k mikrofónu táto funkcia jednoducho nie je dostupná, zvyšok aplikácie funguje bez obmedzenia.</li>
+    <li><strong>Oprávnený záujem</strong> (čl. 6 ods. 1 písm. f) GDPR) — krátkodobé technické záznamy IP adresy na ochranu pred zneužitím.</li>
+  </ul>
+
+  <h2>3. Komu údaje odovzdávame (sprostredkovatelia)</h2>
+  <table>
+    <tr><th>Služba</th><th>Účel</th></tr>
+    <tr><td>Stripe</td><td>Spracovanie platby predplatného</td></tr>
+    <tr><td>Resend</td><td>Odoslanie e-mailu s prístupovým kódom a odpovedí na kontaktný formulár</td></tr>
+    <tr><td>Vercel / Upstash (Vercel KV)</td><td>Hosting webu a databáza prístupov (e-mail, PIN, stav predplatného)</td></tr>
+    <tr><td>Microsoft Azure Speech</td><td>Vyhodnotenie výslovnosti v režime Практика (len ak túto funkciu použijete)</td></tr>
+  </table>
+  <p>Žiadne z týchto údajov nepredávame ani neposkytujeme na reklamné účely tretím stranám.</p>
+
+  <h2>4. Doba uchovávania</h2>
+  <p>Údaje o účte (e-mail, PIN, stav predplatného) uchovávame, kým je váš prístup aktívny, a ešte primeranú dobu po zrušení predplatného pre prípad reklamácie alebo daňovo-účtovnej povinnosti. Zvukové nahrávky z mikrofónu sa na našich serveroch vôbec neukladajú — spracúvajú sa v reálnom čase a okamžite sa zahadzujú.</p>
+
+  <h2>5. Vaše práva</h2>
+  <ul>
+    <li>Právo na prístup k svojim údajom</li>
+    <li>Právo na opravu nesprávnych údajov</li>
+    <li>Právo na vymazanie ("právo byť zabudnutý")</li>
+    <li>Právo na obmedzenie spracúvania</li>
+    <li>Právo na prenosnosť údajov</li>
+    <li>Právo namietať proti spracúvaniu</li>
+    <li>Právo podať sťažnosť na Úrad na ochranu osobných údajov SR (dataprotection.gov.sk)</li>
+  </ul>
+  <p>Na uplatnenie ktoréhokoľvek z týchto práv nám napíšte na e-mail nižšie — odpovedáme do 30 dní.</p>
+
+  <h2>6. Cookies a lokálne úložisko</h2>
+  <p>Priruke.sk nepoužíva sledovacie reklamné cookies. Na overenie prihlásenia (e-mail + PIN) používame lokálne úložisko prehliadača (localStorage) priamo na vašom zariadení — tieto údaje neopúšťajú váš telefón/počítač okrem momentu overenia na našom serveri. Načítanie písiem cez Google Fonts môže technicky odoslať vašu IP adresu spoločnosti Google — ide o bežnú súčasť fungovania webu, nie o sledovanie.</p>
+
+  <div class="contact-box">
+    <h2 style="margin-top:0;">Otázky ohľadom ochrany údajov</h2>
+    <p style="margin-bottom:0;">Napíšte nám na <a href="mailto:slovahoj.kids@gmail.com">slovahoj.kids@gmail.com</a> alebo cez <a href="/faq.html#contact">kontaktný formulár</a>.</p>
+  </div>
+</div>
+</body>
+</html>
