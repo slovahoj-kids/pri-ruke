@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="uk" id="htmlRoot">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Часті запитання — При руке</title>
+<meta name="description" content="Відповіді на часті запитання про При руке: оплата, доступ, режим Практика та контактна форма.">
+<meta name="robots" content="index, follow">
+<link rel="icon" type="image/svg+xml" href="/favicon.svg">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F1F4F7;--card:#fff;--ink:#142033;--ink-soft:#5C6B7D;--muted:#9AA4B0;
+    --border:#D7DEE6;--blue:#0B4EA2;--blue-dark:#083A7A;
+  }
+  *{box-sizing:border-box;}
+  body{background:var(--paper);color:var(--ink);font-family:'Inter',system-ui,sans-serif;margin:0;line-height:1.55;}
+  .wrap{max-width:720px;margin:0 auto;padding:20px 20px 60px;}
+  a{color:var(--blue);}
+  .topbar{display:flex;align-items:center;justify-content:space-between;margin-bottom:20px;}
+  .back{display:inline-block;color:var(--ink-soft);text-decoration:none;font-weight:600;font-size:14.5px;}
+  .lang-toggle{display:flex;align-items:center;gap:2px;background:var(--card);border:1px solid var(--border);border-radius:8px;padding:4px;}
+  .lang-toggle button{border:none;background:transparent;border-radius:6px;padding:6px 10px;font-size:12px;font-weight:800;color:var(--muted);cursor:pointer;}
+  .lang-toggle button.active{background:var(--blue);color:#fff;}
+  h1{font-weight:800;font-size:26px;margin:0 0 6px;}
+  .sub{color:var(--ink-soft);font-size:15px;margin-bottom:26px;}
+  h2.section{font-weight:700;font-size:15px;text-transform:uppercase;letter-spacing:0.04em;color:var(--blue-dark);margin:32px 0 12px;}
+  details{
+    background:var(--card);border:1px solid var(--border);border-radius:10px;
+    padding:15px 16px;margin-bottom:10px;
+  }
+  summary{font-weight:700;font-size:15.5px;cursor:pointer;list-style:none;}
+  summary::-webkit-details-marker{display:none;}
+  summary::before{content:"+ ";color:var(--blue);}
+  details[open] summary::before{content:"– ";}
+  details p{margin:10px 0 0;font-size:14.5px;color:var(--ink-soft);}
+  details a{font-weight:600;}
+
+  .contact-box{
+    margin-top:38px;padding:22px;background:var(--card);
+    border:1px solid var(--border);border-radius:12px;
+  }
+  .contact-box h2{font-size:18px;margin:0 0 6px;}
+  .contact-box .sub{font-size:14px;margin-bottom:16px;}
+  .field{margin-bottom:12px;}
+  .field label{display:block;font-size:13px;font-weight:700;color:var(--ink-soft);margin-bottom:5px;}
+  .field input,.field textarea{
+    width:100%;padding:13px 14px;border-radius:8px;border:1px solid var(--border);
+    background:#fff;font-size:15px;font-family:'Inter',sans-serif;
+  }
+  .field textarea{min-height:100px;resize:vertical;}
+  .field input:focus,.field textarea:focus{outline:2px solid var(--blue);outline-offset:1px;}
+  .hp{position:absolute;left:-9999px;}
+  .submit-btn{
+    background:var(--blue);color:#fff;border:none;border-radius:8px;
+    padding:14px 18px;font-size:15.5px;font-weight:700;width:100%;cursor:pointer;
+  }
+  .submit-btn:disabled{opacity:0.6;}
+  .form-msg{font-size:14px;padding:10px 12px;border-radius:8px;margin-bottom:12px;display:none;}
+  .form-msg.show{display:block;}
+  .form-msg.error{background:#FBE9E9;color:#A83232;}
+  .form-msg.success{background:#E9F2E4;color:#3E7B34;}
+  .legal-links{margin-top:30px;font-size:13.5px;color:var(--muted);text-align:center;}
+  .legal-links a{color:var(--muted);margin:0 6px;}
+
+  html[data-lang="uk"] .lang-ru{display:none;}
+  html[data-lang="ru"] .lang-uk{display:none;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="topbar">
+    <a class="back" href="/">
+      <span class="lang-uk">← Назад до При руке</span>
+      <span class="lang-ru">← Назад к При руке</span>
+    </a>
+    <div class="lang-toggle">
+      <button id="langUk" class="active" onclick="setLang('uk')">UA</button>
+      <button id="langRu" onclick="setLang('ru')">RU</button>
+    </div>
+  </div>
+
+  <h1><span class="lang-uk">Часті запитання</span><span class="lang-ru">Частые вопросы</span></h1>
+  <p class="sub">
+    <span class="lang-uk">Не знайшли відповідь? Форма для питань — внизу сторінки.</span>
+    <span class="lang-ru">Не нашли ответ? Форма для вопросов — внизу страницы.</span>
+  </p>
+
+  <h2 class="section"><span class="lang-uk">Загальне</span><span class="lang-ru">Общее</span></h2>
+
+  <details>
+    <summary><span class="lang-uk">Що таке При руке?</span><span class="lang-ru">Что такое При руке?</span></summary>
+    <p class="lang-uk">Кишеньковий довідник словацьких фраз для дорослих — не курс мови. Відкриваєш потрібну тему (аптека, магазин, транспорт тощо), бачиш готову фразу з озвучкою і кажеш її вголос. Ідея в тому, щоб не вгадувати слова на ходу, а мати їх напохваті.</p>
+    <p class="lang-ru">Карманный справочник словацких фраз для взрослых — не языковой курс. Открываешь нужную тему (аптека, магазин, транспорт и т.д.), видишь готовую фразу с озвучкой и говоришь её вслух. Идея в том, чтобы не подбирать слова на ходу, а иметь их под рукой.</p>
+  </details>
+
+  <details>
+    <summary><span class="lang-uk">Чим це відрізняється від мовного курсу?</span><span class="lang-ru">Чем это отличается от языкового курса?</span></summary>
+    <p class="lang-uk">Курс вчить мову поступово, крок за кроком. При руке — навпаки, довідник: відкрив тему в потрібний момент (наприклад, стоячи в черзі в аптеці), знайшов фразу, натиснув, почув, сказав. Немає уроків, немає порядку проходження.</p>
+    <p class="lang-ru">Курс учит язык постепенно, шаг за шагом. При руке — наоборот, справочник: открыл тему в нужный момент (например, стоя в очереди в аптеке), нашёл фразу, нажал, услышал, сказал. Нет уроков, нет порядка прохождения.</p>
+  </details>
+
+  <details>
+    <summary><span class="lang-uk">Які теми доступні безкоштовно?</span><span class="lang-ru">Какие темы доступны бесплатно?</span></summary>
+    <p class="lang-uk">6 тем виживання — назавжди безкоштовно, без реєстрації: аптека, магазин, транспорт, екстрена допомога (112), пошта і квітковий магазин. Плюс універсальний модуль "Не зрозумів відповідь?", доступний з будь-якого місця в застосунку.</p>
+    <p class="lang-ru">6 тем выживания — навсегда бесплатно, без регистрации: аптека, магазин, транспорт, экстренная помощь (112), почта и цветочный магазин. Плюс универсальный модуль "Не понял ответ?", доступный из любого места в приложении.</p>
+  </details>
+
+  <h2 class="section"><span class="lang-uk">Оплата</span><span class="lang-ru">Оплата</span></h2>
+
+  <details>
+    <summary><span class="lang-uk">Скільки коштує повний доступ?</span><span class="lang-ru">Сколько стоит полный доступ?</span></summary>
+    <p class="lang-uk">5 € на місяць. Це відкриває решту 15 тем, режим Практика (оцінка вимови) і офлайн-доступ. Оплата — через захищену платіжну систему Stripe.</p>
+    <p class="lang-ru">5 € в месяц. Это открывает остальные 15 тем, режим Практика (оценка произношения) и офлайн-доступ. Оплата — через защищённую платёжную систему Stripe.</p>
+  </details>
+
+  <details>
+    <summary><span class="lang-uk">Як скасувати підписку?</span><span class="lang-ru">Как отменить подписку?</span></summary>
+    <p class="lang-uk">Напишіть нам через <a href="#contact">контактну форму</a> або на slovahoj.kids@gmail.com — скасуємо продовження, доступ залишиться активним до кінця вже оплаченого періоду.</p>
+    <p class="lang-ru">Напишите нам через <a href="#contact">контактную форму</a> или на slovahoj.kids@gmail.com — отменим продление, доступ останется активным до конца уже оплаченного периода.</p>
+  </details>
+
+  <details>
+    <summary><span class="lang-uk">Чи можна повернути гроші?</span><span class="lang-ru">Можно ли вернуть деньги?</span></summary>
+    <p class="lang-uk">Оскільки доступ до контенту відкривається одразу після оплати, за загальним правом ЄС на цифровий контент право на повернення протягом 14 днів не діє після початку користування. Але якщо щось не працює технічно з нашого боку — обов'язково напишіть нам, розберемось. Деталі у <a href="/reklamacny-poriadok.html">Reklamačnom poriadku</a>.</p>
+    <p class="lang-ru">Поскольку доступ к контенту открывается сразу после оплаты, по общему правилу ЕС на цифровой контент право на возврат в течение 14 дней не действует после начала использования. Но если что-то не работает технически с нашей стороны — обязательно напишите нам, разберёмся. Детали в <a href="/reklamacny-poriadok.html">Reklamačnom poriadku</a>.</p>
+  </details>
+
+  <h2 class="section"><span class="lang-uk">Доступ і вхід</span><span class="lang-ru">Доступ и вход</span></h2>
+
+  <details>
+    <summary><span class="lang-uk">Як увійти з іншого пристрою?</span><span class="lang-ru">Как войти с другого устройства?</span></summary>
+    <p class="lang-uk">Після оплати на пошту приходить 6-значний код доступу. Введіть його разом з email на будь-якому пристрої (кнопка "Увійти" вгорі сторінки) — доступ синхронізується.</p>
+    <p class="lang-ru">После оплаты на почту приходит 6-значный код доступа. Введите его вместе с email на любом устройстве (кнопка "Войти" вверху страницы) — доступ синхронизируется.</p>
+  </details>
+
+  <details>
+    <summary><span class="lang-uk">Забув(-ла) код доступу — що робити?</span><span class="lang-ru">Забыл(-а) код доступа — что делать?</span></summary>
+    <p class="lang-uk">Напишіть нам email, яким оформлювали підписку, через <a href="#contact">контактну форму</a> — надішлемо код повторно.</p>
+    <p class="lang-ru">Напишите нам email, которым оформляли подписку, через <a href="#contact">контактную форму</a> — вышлем код повторно.</p>
+  </details>
+
+  <details>
+    <summary><span class="lang-uk">Чи працює застосунок без інтернету?</span><span class="lang-ru">Работает ли приложение без интернета?</span></summary>
+    <p class="lang-uk">Після першого входу статус доступу кешується на пристрої, тому фрази й аудіо, які вже відкривались, продовжують працювати навіть без зв'язку. Для входу вперше та для режиму Практика інтернет потрібен.</p>
+    <p class="lang-ru">После первого входа статус доступа кешируется на устройстве, поэтому фразы и аудио, которые уже открывались, продолжают работать даже без связи. Для первого входа и для режима Практика интернет нужен.</p>
+  </details>
+
+  <h2 class="section"><span class="lang-uk">Режим Практика</span><span class="lang-ru">Режим Практика</span></h2>
+
+  <details>
+    <summary><span class="lang-uk">Обов'язково використовувати мікрофон?</span><span class="lang-ru">Обязательно использовать микрофон?</span></summary>
+    <p class="lang-uk">Ні, це повністю опційна функція. Без доступу до мікрофона застосунок працює звичайним чином — читаєш фразу, слухаєш озвучку.</p>
+    <p class="lang-ru">Нет, это полностью опциональная функция. Без доступа к микрофону приложение работает обычным образом — читаешь фразу, слушаешь озвучку.</p>
+  </details>
+
+  <details>
+    <summary><span class="lang-uk">Чи зберігається запис мого голосу?</span><span class="lang-ru">Сохраняется ли запись моего голоса?</span></summary>
+    <p class="lang-uk">Ні. Аудіо з мікрофона передається напряму в сервіс Microsoft Azure для оцінки вимови в реальному часі і на наших серверах не зберігається. Детальніше — у <a href="/gdpr.html">Ochrane osobných údajov</a>.</p>
+    <p class="lang-ru">Нет. Аудио с микрофона передаётся напрямую в сервис Microsoft Azure для оценки произношения в реальном времени и на наших серверах не сохраняется. Подробнее — в <a href="/gdpr.html">Ochrane osobných údajov</a>.</p>
+  </details>
+
+  <div class="legal-links">
+    <a href="/gdpr.html">Ochrana osobných údajov</a> ·
+    <a href="/vop.html">VOP</a> ·
+    <a href="/reklamacny-poriadok.html">Reklamačný poriadok</a>
+  </div>
+
+  <div class="contact-box" id="contact">
+    <h2>
+      <span class="lang-uk">Не знайшли відповідь?</span>
+      <span class="lang-ru">Не нашли ответ?</span>
+    </h2>
+    <p class="sub">
+      <span class="lang-uk">Напишіть нам — відповідаємо особисто, зазвичай протягом одного дня.</span>
+      <span class="lang-ru">Напишите нам — отвечаем лично, обычно в течение одного дня.</span>
+    </p>
+    <div class="form-msg" id="formMsg"></div>
+    <input type="text" name="website" class="hp" tabindex="-1" autocomplete="off" id="hp">
+    <div class="field">
+      <label><span class="lang-uk">Ім'я</span><span class="lang-ru">Имя</span></label>
+      <input type="text" id="cName" placeholder="">
+    </div>
+    <div class="field">
+      <label>Email</label>
+      <input type="email" id="cEmail" placeholder="you@email.com">
+    </div>
+    <div class="field">
+      <label><span class="lang-uk">Повідомлення</span><span class="lang-ru">Сообщение</span></label>
+      <textarea id="cMessage" placeholder=""></textarea>
+    </div>
+    <button class="submit-btn" id="cSubmit" onclick="submitContact()">
+      <span class="lang-uk">Надіслати</span><span class="lang-ru">Отправить</span>
+    </button>
+  </div>
+</div>
+
+<script>
+const MSG = {
+  uk: {
+    fillFields: 'Заповніть ім\'я, коректний email і повідомлення.',
+    sending: 'Надсилаємо...',
+    sendFail: 'Не вдалося надіслати. Спробуйте ще раз або напишіть на slovahoj.kids@gmail.com',
+    success: 'Дякуємо! Ми отримали ваше повідомлення і відповімо найближчим часом.',
+    noConnection: 'Немає з\'єднання. Спробуйте ще раз або напишіть на slovahoj.kids@gmail.com',
+    send: 'Надіслати',
+    namePlaceholder: 'Ваше ім\'я',
+    messagePlaceholder: 'Опишіть питання чи проблему...',
+  },
+  ru: {
+    fillFields: 'Заполните имя, корректный email и сообщение.',
+    sending: 'Отправляем...',
+    sendFail: 'Не удалось отправить. Попробуйте снова или напишите на slovahoj.kids@gmail.com',
+    success: 'Спасибо! Мы получили ваше сообщение и ответим в ближайшее время.',
+    noConnection: 'Нет соединения. Попробуйте снова или напишите на slovahoj.kids@gmail.com',
+    send: 'Отправить',
+    namePlaceholder: 'Ваше имя',
+    messagePlaceholder: 'Опишите вопрос или проблему...',
+  },
+};
+
+function getLang(){ return localStorage.getItem('priruke_lang') || 'uk'; }
+let currentLang = getLang();
+
+function setLang(lang){
+  currentLang = lang;
+  localStorage.setItem('priruke_lang', lang);
+  const html = document.getElementById('htmlRoot');
+  html.setAttribute('data-lang', lang);
+  html.lang = lang;
+  document.getElementById('langUk').classList.toggle('active', lang==='uk');
+  document.getElementById('langRu').classList.toggle('active', lang==='ru');
+  document.getElementById('cName').placeholder = MSG[lang].namePlaceholder;
+  document.getElementById('cMessage').placeholder = MSG[lang].messagePlaceholder;
+}
+
+async function submitContact(){
+  const name = document.getElementById('cName').value.trim();
+  const email = document.getElementById('cEmail').value.trim();
+  const message = document.getElementById('cMessage').value.trim();
+  const website = document.getElementById('hp').value; // honeypot
+  const msgEl = document.getElementById('formMsg');
+  const btn = document.getElementById('cSubmit');
+  const m = MSG[currentLang];
+
+  if(!name || !message || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)){
+    msgEl.textContent = m.fillFields;
+    msgEl.className = 'form-msg show error';
+    return;
+  }
+
+  const originalHtml = btn.innerHTML;
+  btn.disabled = true; btn.textContent = m.sending;
+  try{
+    const res = await fetch('/api/contact', {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body: JSON.stringify({ name, email, message, website }),
+    });
+    const data = await res.json();
+    if(!res.ok || !data.ok){
+      msgEl.textContent = data.error || m.sendFail;
+      msgEl.className = 'form-msg show error';
+      btn.disabled = false; btn.innerHTML = originalHtml;
+      return;
+    }
+    msgEl.textContent = m.success;
+    msgEl.className = 'form-msg show success';
+    document.getElementById('cName').value = '';
+    document.getElementById('cEmail').value = '';
+    document.getElementById('cMessage').value = '';
+    btn.disabled = false; btn.innerHTML = originalHtml;
+  } catch(e){
+    msgEl.textContent = m.noConnection;
+    msgEl.className = 'form-msg show error';
+    btn.disabled = false; btn.innerHTML = originalHtml;
+  }
+}
+
+document.getElementById('htmlRoot').setAttribute('data-lang', currentLang);
+document.getElementById('langUk').classList.toggle('active', currentLang==='uk');
+document.getElementById('langRu').classList.toggle('active', currentLang==='ru');
+document.getElementById('cName').placeholder = MSG[currentLang].namePlaceholder;
+document.getElementById('cMessage').placeholder = MSG[currentLang].messagePlaceholder;
+
+if(window.location.hash === '#contact'){
+  document.getElementById('contact').scrollIntoView();
+}
+</script>
+</body>
+</html>
